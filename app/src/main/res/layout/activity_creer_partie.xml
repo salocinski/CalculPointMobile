@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreerPartie">
+
+    <Button
+        android:id="@+id/ajouterJoueur"
+        android:layout_width="173dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:singleLine="true"
+        android:text="Ajouter joueur"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreCreationPartie" />
+
+    <Button
+        android:id="@+id/changerScoreLimite"
+        android:layout_width="174dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Changer score limite"
+        app:layout_constraintEnd_toStartOf="@+id/ajouterJoueur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreCreationPartie" />
+
+    <Button
+        android:id="@+id/quitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="80dp"
+        android:text="Quitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/lancerPartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lancer partie"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreCreationPartie"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <TextView
+        android:id="@+id/titreCreationPartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Création de la partie"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Joueur(s) de la partie"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajouterJoueur" />
+</androidx.constraintlayout.widget.ConstraintLayout>
